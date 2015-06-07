@@ -5,6 +5,8 @@
 #include <memory>
 #include <cstring>
 
+namespace cdstr
+{
 /*
  * Sortowanie kubełkowe
  * Dopuszczalne tylko typy całkowitoliczbowe bool, char, short, int, long, long long w wersji
@@ -47,6 +49,8 @@ std::unique_ptr<typename std::enable_if<std::is_integral<Result>::value, Result>
                 retArr[shift] = static_cast<Result>(i + min);
                 
         return std::unique_ptr<Result[]>(std::move(retArr));
+}
+
 }
 
 #endif // SORT_ALGORITHMS

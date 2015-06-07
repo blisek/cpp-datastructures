@@ -3,3 +3,7 @@ cpp-structures.workspace
 .codelite
 algorithms.project
 main.cpp
+Debug/
+Makefile
+algorithms.mk
+algorithms.txt
